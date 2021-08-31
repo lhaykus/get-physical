@@ -3,7 +3,7 @@ const { model, Schema } = require('mongoose');
 //Create a workout schema
 const workoutSchema = new Schema(
     {
-        day: 
+        day:
         {
             type: Date,
             default: () => new Date(),
@@ -21,6 +21,7 @@ const workoutSchema = new Schema(
                 },
                 duration: {
                     type: Number,
+                    required: 'Enter duration of exercise'
                 },
                 weight: {
                     type: Number,
@@ -38,8 +39,13 @@ const workoutSchema = new Schema(
             }
         ]
 
-}
-)
+    },
+    {
+        toJSON: {
+            virtuals: true
+        },
+    }
+);
 
 
 module.exports = model('Workout', workoutSchema)

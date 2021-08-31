@@ -4,10 +4,10 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 
 //Creating a PORT
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 //Mongoose database connection 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workoutdb', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
     useNewUrlParser: true, //to avoid an error 
     useUnifiedTopology: true, //to avoid error
     useCreateIndex: true,
@@ -26,6 +26,10 @@ app.use(express.static('public'));
 //Middlewares (takes value of form and attaches to req.body)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+//Require routes
+app.use(require('./routes/html'));
+app.use(require('./routes/workoutRoutes'));
 
 //Listening to port
 app.listen(PORT, () => {
