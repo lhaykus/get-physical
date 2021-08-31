@@ -14,10 +14,11 @@ body,
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #57cefd;
   color: #ffffff;
   padding: 24px;
   line-height: 3;
