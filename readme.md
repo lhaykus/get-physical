@@ -5,7 +5,12 @@
 
 https://get-physical-fitness-tracker.herokuapp.com/?id=6130192ac065490016542980
 
-# <h3 align='left'> Built With 🧰 </h3>
+## Table of Content
+- [Built With](#built-with)
+- [Usage](#usage)
+- [Credits](#credits)
+
+## Built With
 <ul>
 <li> Mongoose </li>
 <li> MongoDb </li>
@@ -17,8 +22,11 @@ https://get-physical-fitness-tracker.herokuapp.com/?id=6130192ac065490016542980
 
 ![fitness-tracker](./assets/fitnessapp.gif)
 
-# <h3 align='left'> Usage 💻 </h3>
-Install all the needed packages. **Npm i** if cloning this repo, otherwise install each package manually
+## Usage
+* Make sure to have **Node.js** installed 
+* Use **MongoDB Atlas** to deploy to Heroku
+
+* Install all the needed packages. **'Npm i'** if cloning this repo, otherwise install each package manually
 
 ```
 npm i
@@ -31,15 +39,15 @@ npm i express
 npm i morgan
 
 ```
-Seed the database
+* Seed the database
 ```
 npm run seed
 ```
-Start the server
+* Start the server
 ```
 npm start
 ```
-Go to localhost:3002 and app is ready to be used!
+* Go to localhost:3002 and app is ready to be used!
 
-# <h3 align='left'>Credits</h3>
+## Credits
 Frontend code was provided by © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand.  All Rights Reserved.
