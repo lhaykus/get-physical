@@ -1,6 +1,10 @@
 # <h1 align='center'> Get Physical 💃 </h1>
 <p align='center'> A NoSQL workout tracker app where users can create and track daily workouts! Powered by Mongoose and MongoDb this app allows users to track the name, type, weight, sets, reps and duration of exercises they are doing. A weekly chart allows users to visually see their progess and the workouts theyve completed in a week! </p>
 
+## Deployed on Heroku
+
+https://get-physical-fitness-tracker.herokuapp.com/?id=6130192ac065490016542980
+
 # <h3 align='left'> Built With 🧰 </h3>
 <ul>
 <li> Mongoose </li>
